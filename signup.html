@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up |Task Manager Siemens</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                palabra:'#4A4A4A',
+                campo:'#ECE9E9',
+                'botones':{
+                DEFAULT: 'rgba(0, 204, 204, 1)',
+                light: 'rgba(0, 204, 204, 0.24)',
+                }
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <section class="container mx-auto w-3/4 h-auto my-10 rounded-2xl border border-solid shadow-xl md:w-1/2 text-palabra">
+        <h1 class="text-center font-bold mt-20 mb-14 text-4xl ">Sign-up</h1>
+        <form id="formulario_login" class="flex flex-col h-screen items-stretch justify-between">
+            <input type="text" name="nombre" placeholder="Nombre completo" class=" focus:bg-campo mx-auto w-2/3 px-3 py-4 rounded-2xl">
+            <input type="text" name="interno" placeholder="Número de interno" class=" focus:bg-campo mx-auto w-2/3 px-3 py-4 rounded-2xl">
+            <input type="text" name="alias" placeholder="Alias de usuario" class=" focus:bg-campo mx-auto w-2/3 px-3 py-4 rounded-2xl">
+            <input type="email" name="email" placeholder="Email" class=" focus:bg-campo mx-auto w-2/3 px-3 py-4 rounded-2xl">
+            <input type="password" name="pass" placeholder="Contraseña" class=" focus:bg-campo mx-auto w-2/3 px-3 py-4 rounded-2xl">
+            <input type="password" name="pass_repeat" placeholder="Repetir contraseña" class=" focus:bg-campo mx-auto w-2/3 px-3 py-4 rounded-2xl">
+            <button type="submit" class="bg-botones text-2xl text-white font-semibold rounded-2xl mx-auto w-1/2 py-2.5 mb-20">Registrarme</button>
+        </form>
+    </section>
+</body>
+</html>
